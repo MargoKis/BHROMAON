@@ -1,10 +1,32 @@
-.footer__title, .header__logo, .header__title {
+ul {
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 15px 25px;
+  border: none;
+  color: white;
+  background-color: #5373fd;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.footer__title, .header__logo, .mainscreen__title {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 700;
 }
 
-.footer__subheading, .section__author, .section__hotel-name, .header__search-input, .header__subheading {
+.footer__subheading, .section__author, .section__hotel-name, .mainscreen__scroll-text, .mainscreen__search-input, .mainscreen__subheading {
   font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
@@ -16,34 +38,37 @@
   font-weight: 300;
 }
 
-.section__feedback-title, .section__btn-book, .section__search-places, .section__check-circle, .section__thumbs-up, .section__explore-btn, .section__heading, .section__why-us, .header__nav-text, .header__search-btn {
+.section__feedback-title, .section__search-places, .section__check-circle, .section__thumbs-up, .section__heading, .section__why-us, .header__nav-text, .mainscreen__search-btn, .btn {
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
 }
 
-.header__searching {
+.mainscreen {
   background-image: url(../assets/svg/header.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 860px;
+}
+.mainscreen__searching {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 16%;
 }
-.header__title {
+.mainscreen__title {
   font-size: 48px;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
-.header__subheading {
+.mainscreen__subheading {
   font-size: 22px;
-  color: white;
+  color: #fff;
   letter-spacing: 7px;
 }
-.header__search-bar {
+.mainscreen__search-bar {
   width: 100%;
   max-width: 610px;
   background-color: rgb(255, 255, 255);
@@ -52,7 +77,7 @@
   padding: 5px 5px;
   margin-top: 20px;
 }
-.header__search-input {
+.mainscreen__search-input {
   background: transparent;
   flex: 1;
   display: flex;
@@ -61,13 +86,26 @@
   padding: 10px 20px;
   letter-spacing: 3px;
 }
-.header__search-btn {
+.mainscreen__search-btn {
   padding: 16px 24px;
   border: none;
   background-color: #5373fd;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
+.mainscreen__scroll-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16%;
+}
+.mainscreen__scroll-text {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
 .header__navigation {
   display: flex;
   flex-direction: row;
@@ -77,14 +115,14 @@
 }
 .header__logo {
   text-transform: uppercase;
-  color: white;
+  color: #fff;
 }
 .header__nav-block {
   display: flex;
   flex-direction: row;
 }
 .header__nav-text {
-  color: white;
+  color: #fff;
   padding-left: 25px;
   cursor: pointer;
 }
@@ -98,7 +136,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #fff;
 }
 .section__heading {
   font-size: 36px;
@@ -106,17 +144,12 @@
 .section__description {
   margin-left: 15%;
   max-width: 540px;
-  color: white;
+  color: #fff;
   line-height: 180%;
   font-size: 16px;
 }
-.section__explore-btn {
-  padding: 15px 25px;
-  border: none;
-  color: white;
-  background: linear-gradient(45deg, #486bfe, #5373fd);
-  cursor: pointer;
-  text-transform: uppercase;
+.section__explore-btn:hover {
+  background-color: #3f56c0;
 }
 .section__images {
   display: flex;
@@ -139,15 +172,21 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+}
+.section__steps-line {
+  position: absolute;
+  left: 400px;
+  top: 20px;
 }
 .section__search-places, .section__check-circle, .section__thumbs-up {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 36px;
-  color: white;
+  color: #fff;
 }
 .section__book-now {
   background-image: url(../assets/svg/book-now.svg);
@@ -170,37 +209,30 @@
   left: 18%;
 }
 .section__country {
-  color: white;
+  color: #fff;
   margin-bottom: 0;
   font-size: 20px;
 }
 .section__hotel-name {
-  color: white;
+  color: #fff;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 .section__about-hotel {
-  color: white;
+  color: #fff;
   font-size: 16px;
 }
 .section__btn-book {
-  padding: 15px 25px;
-  border: none;
-  color: white;
-  background: linear-gradient(45deg, #486bfe, #5373fd);
-  cursor: pointer;
-  text-transform: uppercase;
   max-width: 180px;
+}
+.section__btn-book:hover {
+  background-color: #3f56c0;
 }
 .section__book-now2 {
   background-image: url(../assets/svg/book-now2.svg);
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  height: 80vh;
-=======
   height: 680px;
->>>>>>> fa88bf8 (first commit)
   position: relative;
 }
 .section__right-block {
@@ -220,11 +252,7 @@
   background-image: url(../assets/svg/feedback.svg);
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  height: 80vh;
-=======
   height: 680px;
->>>>>>> fa88bf8 (first commit)
 }
 .section__review-block {
   display: flex;
@@ -235,7 +263,7 @@
 }
 .section__feedback-title {
   font-size: 36px;
-  color: white;
+  color: #fff;
   margin-bottom: 60px;
 }
 .section__photo-text {
@@ -254,12 +282,12 @@
   line-height: 150%;
 }
 .section__author {
-  color: white;
+  color: #fff;
   font-size: 20px;
   text-transform: uppercase;
 }
 .section__feedback-comment {
-  color: white;
+  color: #fff;
   font-size: 16px;
   text-align: justify;
 }
@@ -280,15 +308,14 @@
 }
 .footer__title {
   font-size: 24px;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
 .footer__subheading {
   font-size: 14px;
-  color: white;
+  color: #fff;
   letter-spacing: 7px;
-<<<<<<< HEAD
 }
 .footer__social-icons {
   display: flex;
@@ -296,8 +323,12 @@
   justify-content: space-around;
   text-align: justify;
 }
-.footer__icon {
-  padding: 0px 10px;
-=======
->>>>>>> fa88bf8 (first commit)
+
+.icon {
+  margin: 0px 10px;
+  font-size: 30px;
+  color: #fff;
+}
+.icon:hover {
+  color: #3f56c0;
 }/*# sourceMappingURL=index.css.map */

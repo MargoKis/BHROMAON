@@ -1,0 +1,9 @@
+.btn {
+    @extend %aleo400;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    background-color: #5373fd;
+    cursor: pointer;
+    text-transform: uppercase;
+}
