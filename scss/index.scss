@@ -1,0 +1,296 @@
+@import "reset";
+@import "extends";
+@import "variables";
+
+// .container {
+//     margin-left: 10%;
+//     margin-right: 10%;
+// }
+
+.header {
+  &__searching {
+    background-image: url(../assets/svg/header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    @extend %josefin700;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  &__subheading {
+    @extend %josefin400;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 7px;
+  }
+  &__search-bar {
+    width: 100%;
+    max-width: 610px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    margin-top: 20px;
+  }
+  &__search-input {
+    @extend %josefin400;
+    background: transparent;
+    flex: 1;
+    display: flex;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+  }
+  &__search-btn {
+    @extend %aleo400;
+    padding: 16px 24px;
+    border: none;
+    background-color: #5373fd;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5373fd;
+    padding: 0.5% 15%;
+  }
+  &__logo {
+    @extend %josefin700;
+    text-transform: uppercase;
+    color: white;
+  }
+  &__nav-block {
+    display: flex;
+    flex-direction: row;
+  }
+  &__nav-text {
+    @extend %aleo400;
+    color: white;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+}
+
+.section {
+  &__why-us {
+    @extend %aleo400;
+    background-image: url(../assets/svg/why-back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  &__heading {
+    @extend %aleo400;
+    font-size: 36px;
+  }
+  &__description {
+    margin-left: 15%;
+    @extend %josefin300;
+    max-width: 540px;
+    color: white;
+    line-height: 180%;
+    font-size: 16px;
+  }
+
+  &__explore-btn {
+    @extend %aleo400;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #486bfe, #5373fd);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  &__images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+  }
+  &__river-img {
+    margin-bottom: 20px;
+    margin-right: 70px;
+  }
+  &__mountain-img {
+    margin-left: 70px;
+  }
+  &__steps {
+    background-image: url(../assets/png/steps-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  &__search-places,
+  &__check-circle,
+  &__thumbs-up {
+    @extend %aleo400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+  }
+  &__book-now {
+    background-image: url(../assets/svg/book-now.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    position: relative;
+  }
+  &__left-block {
+    max-width: 650px;
+    height: 250px;
+    line-height: 155%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 40%;
+    left: 18%;
+  }
+  &__country {
+    @extend %josefin300;
+    color: white;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  &__hotel-name {
+    @extend %josefin400;
+    color: white;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  &__about-hotel {
+    @extend %josefin300;
+    color: white;
+    font-size: 16px;
+  }
+  &__btn-book {
+    @extend %aleo400;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    background: linear-gradient(45deg, #486bfe, #5373fd);
+    cursor: pointer;
+    text-transform: uppercase;
+    max-width: 180px;
+  }
+  &__book-now2 {
+    background-image: url(../assets/svg/book-now2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    position: relative;
+  }
+  &__right-block {
+    max-width: 650px;
+    height: 250px;
+    line-height: 155%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 40%;
+    right: 18%;
+  }
+  &__feedback {
+    background-image: url(../assets/svg/feedback.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+  }
+  &__review-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+  }
+  &__feedback-title {
+    @extend %aleo400;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 60px;
+  }
+  &__photo-text {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  &__text-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #333333;
+    padding: 0px 60px;
+    line-height: 150%;
+  }
+  &__author {
+    @extend %josefin400;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  &__feedback-comment {
+    @extend %josefin300;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+.footer {
+  background-image: url(../assets/png/footer-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  margin-top: -40px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  &__title {
+    @extend %josefin700;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  &__subheading {
+    @extend %josefin400;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 7px;
+  }
+}
