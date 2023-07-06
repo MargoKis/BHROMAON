@@ -196,7 +196,11 @@
   background-image: url(../assets/svg/book-now2.svg);
   background-repeat: no-repeat;
   background-size: cover;
+<<<<<<< HEAD
   height: 80vh;
+=======
+  height: 680px;
+>>>>>>> fa88bf8 (first commit)
   position: relative;
 }
 .section__right-block {
@@ -216,7 +220,11 @@
   background-image: url(../assets/svg/feedback.svg);
   background-repeat: no-repeat;
   background-size: cover;
+<<<<<<< HEAD
   height: 80vh;
+=======
+  height: 680px;
+>>>>>>> fa88bf8 (first commit)
 }
 .section__review-block {
   display: flex;
@@ -280,6 +288,7 @@
   font-size: 14px;
   color: white;
   letter-spacing: 7px;
+<<<<<<< HEAD
 }
 .footer__social-icons {
   display: flex;
@@ -289,4 +298,6 @@
 }
 .footer__icon {
   padding: 0px 10px;
+=======
+>>>>>>> fa88bf8 (first commit)
 }/*# sourceMappingURL=index.css.map */
