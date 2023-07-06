@@ -203,11 +203,7 @@
     background-image: url(../assets/svg/book-now2.svg);
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
-    height: 80vh;
-=======
     height: 680px;
->>>>>>> fa88bf8 (first commit)
     position: relative;
   }
   &__right-block {
@@ -227,11 +223,7 @@
     background-image: url(../assets/svg/feedback.svg);
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
-    height: 80vh;
-=======
     height: 680px;
->>>>>>> fa88bf8 (first commit)
   }
   &__review-block {
     display: flex;
@@ -301,7 +293,6 @@
     color: white;
     letter-spacing: 7px;
   }
-<<<<<<< HEAD
   &__social-icons {
     display: flex;
     flex-direction: row;
@@ -311,6 +302,4 @@
   &__icon {
     padding: 0px 10px;
   }
-=======
->>>>>>> fa88bf8 (first commit)
 }
