@@ -203,7 +203,7 @@
     background-image: url(../assets/svg/book-now2.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 680px;
+    height: 80vh;
     position: relative;
   }
   &__right-block {
@@ -223,7 +223,7 @@
     background-image: url(../assets/svg/feedback.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 680px;
+    height: 80vh;
   }
   &__review-block {
     display: flex;
@@ -292,5 +292,14 @@
     font-size: 14px;
     color: white;
     letter-spacing: 7px;
+  }
+  &__social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+  }
+  &__icon {
+    padding: 0px 10px;
   }
 }
