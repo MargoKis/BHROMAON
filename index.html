@@ -17,148 +17,153 @@
     ></script>
   </head>
   <body>
-    <div class="mainscreen">
-      <div class="mainscreen__searching">
-        <h1 class="mainscreen__title">bhromaon</h1>
-        <h3 class="mainscreen__subheading">Safe Travel Anywhere</h3>
-        <form class="mainscreen__search-bar" action="">
-          <input
-            class="mainscreen__search-input"
-            type="text"
-            placeholder="Search Your Travel Destination"
+    <div class="container">
+      <div class="mainscreen">
+        <div class="mainscreen__searching">
+          <h1 class="mainscreen__title">bhromaon</h1>
+          <h3 class="mainscreen__subheading">Safe Travel Anywhere</h3>
+          <form class="mainscreen__search-bar" action="">
+            <input
+              class="mainscreen__search-input"
+              type="text"
+              placeholder="Search Your Travel Destination"
+            />
+            <button class="mainscreen__search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i> SEARCH
+            </button>
+          </form>
+          <div class="mainscreen__scroll-wrap">
+            <a href="#menu" class="mainscreen__scroll-down">
+              <div class="mainscreen__scroll-text">Scroll Down</div>
+              <i class="fa-solid fa-arrow-down-long" style="color: white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <header class="header header__navigation" id="menu">
+        <h3 class="header__logo">bhromaon</h3>
+        <nav class="header__nav-block">
+          <a href="#who-we" class="header__nav-text">Who We Are</a>
+          <a href="#what-we" class="header__nav-text">What We Do</a>
+          <a href="#travel-us" class="header__nav-text">Travel With Us</a>
+          <a href="#contact-us" class="header__nav-text">Contact Us</a>
+        </nav>
+      </header>
+      <div class="section__why-us section" id="who-we">
+        <div class="section__description">
+          <h2 class="section__heading">Why Choose Us</h2>
+          <p class="section__text">
+            Tion and dislike men who are so beguiled and demoralized by desire
+            by the charms of pleasure of the moment, so blinded by desire, that
+            they cannot foresee
+            <br />
+            <br />
+            Ddislike men who are so beguiled and demoralized by the charms of
+            pleasure of the moment, so blinded by desire, that.
+          </p>
+          <button class="section__explore-btn btn">explore places</button>
+        </div>
+        <div class="section__images">
+          <img
+            class="section__river-img"
+            src="./assets/png/river.png"
+            alt="river"
           />
-          <button class="mainscreen__search-btn" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i> SEARCH
-          </button>
-        </form>
+          <img
+            class="section__mountain-img"
+            src="./assets/png/mountain.png"
+            alt="mountain"
+          />
+        </div>
       </div>
-      <div class="mainscreen__scroll-wrap">
-        <a href="#menu" class="mainscreen__scroll-down">
-          <div class="mainscreen__scroll-text">Scroll Down</div>
-          <i class="fa-solid fa-arrow-down-long" style="color: white"></i>
-        </a>
-      </div>
-    </div>
-    <header class="header header__navigation" id="menu">
-      <h3 class="header__logo">bhromaon</h3>
-      <nav class="header__nav-block">   
-        <a href="#who-we" class="header__nav-text">Who We Are</a>
-        <a href="#what-we" class="header__nav-text">What We Do</a>
-        <a href="#travel-us" class="header__nav-text">Travel With Us</a>
-        <a href="#contact-us" class="header__nav-text">Contact Us</a>
-      </nav>
-    </header>
-    <div class="section__why-us section" id="who-we">
-      <div class="section__description">
-        <h2 class="section__heading">Why Choose Us</h2>
-        <p class="section__text">
-          Tion and dislike men who are so beguiled and demoralized by desire by
-          the charms of pleasure of the moment, so blinded by desire, that they
-          cannot foresee
-          <br />
-          <br />
-          Ddislike men who are so beguiled and demoralized by the charms of
-          pleasure of the moment, so blinded by desire, that.
-        </p>
-        <button class="section__explore-btn btn">explore places</button>
-      </div>
-      <div class="section__images">
-        <img
-          class="section__river-img"
-          src="./assets/png/river.png"
-          alt="river"
-        />
-        <img
-          class="section__mountain-img"
-          src="./assets/png/mountain.png"
-          alt="mountain"
-        />
-      </div>
-    </div>
-    <div class="section__steps">
-      <div class="section__search-places">
+      <div class="section__steps">
         <img src="./assets/png/steps-line.png" class="section__steps-line" />
-        <i
-          class="fa-solid fa-magnifying-glass"
-          style="color: #5373fd; font-size: 55px"
-        ></i>
-        <p class="section__steps-text">Search Places</p>
+        <div class="section__search-places">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: #5373fd; font-size: 55px"
+          ></i>
+          <p class="section__steps-text">Search Places</p>
+        </div>
+        <div class="section__check-circle">
+          <i
+            class="fa-regular fa-circle-check"
+            style="color: #ff6363; font-size: 55px"
+          ></i>
+          <p class="section__steps-text">Select Places</p>
+        </div>
+        <div class="section__thumbs-up">
+          <i
+            class="fa-regular fa-thumbs-up"
+            style="color: #00a2ff; font-size: 55px"
+          ></i>
+          <p class="section__steps-text">Book & Enjoy</p>
+        </div>
       </div>
-      <div class="section__check-circle">
-        <i
-          class="fa-regular fa-circle-check"
-          style="color: #ff6363; font-size: 55px"
-        ></i>
-        <p class="section__steps-text">Select Places</p>
+      <div class="section__book-now" id="what-we">
+        <div class="section__block-wrapper">
+          <div class="section__left-block">
+            <p class="section__country">Spain</p>
+            <h3 class="section__hotel-name">Grand Spain Madrid</h3>
+            <p class="section__about-hotel">
+              But I must explain to you how all this mistaken idea of account to
+              denouncing pleasure and praising pain was account born and I
+              account will give you a complete account of the system
+            </p>
+            <button class="section__btn-book btn">book now</button>
+          </div>
+        </div>
       </div>
-      <div class="section__thumbs-up">
-        <i
-          class="fa-regular fa-thumbs-up"
-          style="color: #00a2ff; font-size: 55px"
-        ></i>
-        <p class="section__steps-text">Book & Enjoy</p>
-      </div>
-    </div>
-    <div class="section__book-now" id="what-we">
-      <div class="section__block-wrapper">
-        <div class="section__left-block">
+      <div class="section__book-now2">
+        <div class="section__right-block">
           <p class="section__country">Spain</p>
           <h3 class="section__hotel-name">Grand Spain Madrid</h3>
           <p class="section__about-hotel">
             But I must explain to you how all this mistaken idea of account to
-            <br />
-            denouncing pleasure and praising pain was account born and I <br />
-            account will give you a complete account of the system
+            denouncing pleasure and praising pain was account born and I account
+            will give you a complete account of the system
           </p>
           <button class="section__btn-book btn">book now</button>
         </div>
       </div>
-    </div>
-    <div class="section__book-now2">
-      <div class="section__right-block">
-        <p class="section__country">Spain</p>
-        <h3 class="section__hotel-name">Grand Spain Madrid</h3>
-        <p class="section__about-hotel">
-          But I must explain to you how all this mistaken idea of account to
-          <br />
-          denouncing pleasure and praising pain was account born and I <br />
-          account will give you a complete account of the system
-        </p>
-        <button class="section__btn-book btn">book now</button>
-      </div>
-    </div>
-    <div class="section__feedback" id="travel-us">
-      <div class="section__review-block">
-        <h1 class="section__feedback-title">What Our Tourists Say</h1>
-        <div class="section__photo-text">
-          <img src="./assets/svg/review.svg" alt="photo-review" to-review />
-          <div class="section__text-review">
-            <h3 class="section__author">Sam Sumon</h3>
-            <p class="section__feedback-comment">
-              <img src="./assets/png/quote-left.png" />
-              But I must explain to you how all this mistaken idea of account to
-              denouncinpleasure and praising pain But I must explain to you how
-              all this mistaken idea of account to nai denouncing pleasure and
-              praising pain was account born and I account will give you a
-              complete account of the system was account born and I account will
-              give you a nai the complete account of the system
-            </p>
+      <div class="section__feedback" id="travel-us">
+        <div class="section__review-block">
+          <h1 class="section__feedback-title">What Our Tourists Say</h1>
+          <div class="section__photo-text">
+            <img
+              src="./assets/svg/review.svg"
+              alt="photo-review"
+              class="section__photo-reviewer"
+            />
+            <div class="section__text-review">
+              <h3 class="section__author">Sam Sumon</h3>
+              <p class="section__feedback-comment">
+                <img src="./assets/png/quote-left.png" />
+                But I must explain to you how all this mistaken idea of account
+                to denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer class="footer" id="contact-us">
-      <div class="footer__wrapper">
-        <h1 class="footer__title">bhromaon</h1>
-        <h3 class="footer__subheading">Safe Travel Anywhere</h3>
-        <div class="footer__social-icons">
-          <i class="fa-brands fa-facebook-f icon"></i>
-          <i class="fa-brands fa-twitter icon"></i>
-          <i class="fa-brands fa-linkedin icon"></i>
-          <i class="fa-brands fa-youtube icon"></i>
-          <i class="fa-brands fa-pinterest icon"></i>
+      <footer class="footer" id="contact-us">
+        <div class="footer__wrapper">
+          <h1 class="footer__title">bhromaon</h1>
+          <h3 class="footer__subheading">Safe Travel Anywhere</h3>
+          <div class="footer__social-icons">
+            <i class="fa-brands fa-facebook-f icon"></i>
+            <i class="fa-brands fa-twitter icon"></i>
+            <i class="fa-brands fa-linkedin icon"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+            <i class="fa-brands fa-pinterest icon"></i>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
