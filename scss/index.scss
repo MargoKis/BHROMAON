@@ -136,14 +136,17 @@
   &__images {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-right: 10%;
     max-width: 350px;
   }
   &__river-img {
+    width: 50%;
     margin-bottom: 20px;
     margin-right: 70px;
   }
   &__mountain-img {
+    width: 50%;
     margin-left: 70px;
   }
   &__steps {

@@ -1,14 +1,14 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const header = document.querySelector(".header");
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
+let menu = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
 
-document.querySelectorAll(".header__nav-text").forEach((n) =>
-  n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
+menu.onclick = () => {
+  menu.classList.toggle("bx-x");
+  navlist.classList.toggle("open");
+};
+
+window.onscroll = () => {
+  menu.classList.remove("bx-x");
+  navlist.classList.remove("open");
+};

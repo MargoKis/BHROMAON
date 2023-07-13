@@ -15,9 +15,29 @@
       src="https://kit.fontawesome.com/67edb30d5c.js"
       crossorigin="anonymous"
     ></script>
+    <!--box sizing-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <h3 class="header__logo">bhromaon</h3>
+        <ul class="navlist">
+          <li><a href="#who-we" class="header__nav-text">Who We Are</a></li>
+          <li><a href="#what-we" class="header__nav-text">What We Do</a></li>
+          <li>
+            <a href="#travel-us" class="header__nav-text">Travel With Us</a>
+          </li>
+          <li><a href="#contact-us" class="header__nav-text">Contact Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </div>
+
       <div class="mainscreen">
         <div class="mainscreen__searching">
           <h1 class="mainscreen__title">bhromaon</h1>
@@ -33,14 +53,14 @@
             </button>
           </form>
           <div class="mainscreen__scroll-wrap">
-            <a href="#menu" class="mainscreen__scroll-down">
+            <a href="#who-we" class="mainscreen__scroll-down">
               <div class="mainscreen__scroll-text">Scroll Down</div>
               <i class="fa-solid fa-arrow-down-long" style="color: white"></i>
             </a>
           </div>
         </div>
       </div>
-      <header class="header header__navigation" id="menu">
+      <!-- <header class="header header__navigation" id="menu">
         <h3 class="header__logo">bhromaon</h3>
         <nav class="header__nav-block">
           <a href="#who-we" class="header__nav-text">Who We Are</a>
@@ -48,7 +68,7 @@
           <a href="#travel-us" class="header__nav-text">Travel With Us</a>
           <a href="#contact-us" class="header__nav-text">Contact Us</a>
         </nav>
-      </header>
+      </header> -->
       <div class="section__why-us section" id="who-we">
         <div class="section__description">
           <h2 class="section__heading">Why Choose Us</h2>
